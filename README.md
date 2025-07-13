@@ -9,6 +9,4 @@
 ----
 gcc main.c -o RadioSim.exe -lgdi32 -luser32 -mwindows -municode
 
-This is used to compile the exe"# RadioSim" 
-"# RadioSim" 
-"# RadioSim" 
+This is used to compile the exe 
