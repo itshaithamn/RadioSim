@@ -71,7 +71,9 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             // All painting occurs here, between BeginPaint and EndPaint.
 
             FillRect(hdc, &ps.rcPaint, (HBRUSH) (COLOR_WINDOW+1));
-     
+
+            //Frequency of waves is the number of cycles that occurs in one second
+            //Create a graph that shows the EM frequency, using the ESinusoidalWave function
 
             EndPaint(hwnd, &ps);
         }

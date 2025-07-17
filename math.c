@@ -11,7 +11,7 @@ double range(double timeDisplaced){
     return targetRange;
 }
 
-double ESinusoidalWAve(int frequency, int waveLength, double peakAmplitude, double positionZ, double time, double phaseShift){
+double ESinusoidalWave(int frequency, int waveLength, double peakAmplitude, double positionZ, double time, double phaseShift){
     // Electric field of a sinusoidal wave at position z and time t:
     // E = E₀ * cos(k*z - ω*t + φ)
     //
@@ -31,3 +31,16 @@ double ESinusoidalWAve(int frequency, int waveLength, double peakAmplitude, doub
 
     return E;
 }
+
+//Two waves together on same frequency are superposed
+//Create a function for that using
+//Two waves together on separate frequencies will reduce their amplitude
+//180* out of phase will create a null wave
+//Create a function for that using
+
+//Create a function for Isotropically Radiating sources, this requires defining the intensity of the wave "Q"
+
+//Create a function for polarization
+
+
+
