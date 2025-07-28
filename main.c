@@ -55,8 +55,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
     return 0;
 }
 
-LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
-{
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam){
     switch (uMsg)
     {
         case WM_DESTROY:
@@ -69,16 +68,14 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             HDC hdc = BeginPaint(hwnd, &ps);
 
             // All painting occurs here, between BeginPaint and EndPaint.
-
+            //This coding shit pissing me off
             FillRect(hdc, &ps.rcPaint, (HBRUSH) (COLOR_WINDOW+1));
 
-            //Frequency of waves is the number of cycles that occurs in one second
-            //Create a graph that shows the EM frequency, using the ESinusoidalWave function
+
 
             EndPaint(hwnd, &ps);
         }
-            return 0;
-
+        return 0;
     }
     return DefWindowProc(hwnd, uMsg, wParam, lParam);
 }
